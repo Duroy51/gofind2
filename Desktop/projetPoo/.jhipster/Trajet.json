@@ -1,0 +1,45 @@
+{
+  "annotations": {
+    "changelogDate": "20240612104342"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "heuredepart",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "heurearrivee",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "lieudepart",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lieuarrivee",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombreplace",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "prixplace",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "marqueVehicule",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Trajet",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

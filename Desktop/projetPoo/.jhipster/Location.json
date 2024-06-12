@@ -1,0 +1,25 @@
+{
+  "annotations": {
+    "changelogDate": "20240612104343"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "datedebut",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "datefin",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "prix",
+      "fieldType": "Double"
+    }
+  ],
+  "name": "Location",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

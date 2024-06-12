@@ -1,0 +1,33 @@
+{
+  "annotations": {
+    "changelogDate": "20240612104344"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "marque",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modele",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numeroserie",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "datevol",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "DeclarationVol",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

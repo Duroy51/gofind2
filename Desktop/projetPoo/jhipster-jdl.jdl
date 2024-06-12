@@ -1,0 +1,61 @@
+entity Utilisateur {
+  id Long,
+  nom String,
+  prenom String, 
+  email String,
+  telephone String,
+  password String
+}
+
+entity Annonce {
+  titre String,
+  description String,
+  type String,
+  statut String,
+  datecreation Instant
+}
+
+entity Trajet {
+  date Instant,
+  heuredepart Instant,
+  heurearrivee Instant,
+  lieudepart String,
+  lieuarrivee String,
+  nombreplace Integer,
+  prixplace Double,
+  marqueVehicule String
+}
+
+entity Location {
+  datedebut Instant,
+  datefin Instant,
+  prix Double
+}
+
+entity DeclarationVol {
+  type String,
+  marque String,
+  modele String,
+  numeroserie String,
+  datevol Instant
+}
+
+relationship OneToMany {
+  Utilisateur to Annonce
+}
+
+relationship OneToOne {
+  Annonce{trajet} to Trajet
+}
+
+relationship OneToOne {
+  Annonce{location} to Location
+}
+
+relationship OneToOne {
+  Annonce{declarationVol} to DeclarationVol
+}
+
+paginate Utilisateur, Annonce, Trajet, Location, DeclarationVol with pagination
+
+service * with serviceClass
