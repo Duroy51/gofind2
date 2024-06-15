@@ -1,0 +1,38 @@
+{
+  "annotations": {
+    "changelogDate": "20240615180154"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "lieu",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prix",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "photoPieces",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "name": "Location",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "utilisateur",
+      "otherEntityRelationshipName": "location",
+      "relationshipName": "utilisateur",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

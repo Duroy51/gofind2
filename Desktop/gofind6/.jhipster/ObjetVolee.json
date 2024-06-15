@@ -1,0 +1,42 @@
+{
+  "annotations": {
+    "changelogDate": "20240615180155"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "marque",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "datevol",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "photoObjet",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "numeroSerie",
+      "fieldType": "String"
+    }
+  ],
+  "name": "ObjetVolee",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "utilisateur",
+      "otherEntityRelationshipName": "objetVolee",
+      "relationshipName": "utilisateur",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

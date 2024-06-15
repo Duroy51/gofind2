@@ -1,0 +1,50 @@
+{
+  "annotations": {
+    "changelogDate": "20240615180152"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "userName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Utilisateur",
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "utilisateur",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityName": "objetVolee",
+      "otherEntityRelationshipName": "utilisateur",
+      "relationshipName": "objetVolee",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "location",
+      "otherEntityRelationshipName": "utilisateur",
+      "relationshipName": "location",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "trajet",
+      "otherEntityRelationshipName": "utilisateur",
+      "relationshipName": "trajet",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

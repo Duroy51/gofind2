@@ -1,0 +1,54 @@
+{
+  "annotations": {
+    "changelogDate": "20240615180153"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "heuredepart",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "heurearrivee",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lieudepart",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lieuarrivee",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombreplace",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "prixplace",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "imageVehicule",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "name": "Trajet",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "utilisateur",
+      "otherEntityRelationshipName": "trajet",
+      "relationshipName": "utilisateur",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

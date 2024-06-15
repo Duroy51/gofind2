@@ -1,0 +1,47 @@
+
+
+
+entity Trajet {
+    date LocalDate,
+    heuredepart String,
+    heurearrivee String,
+    lieudepart String,
+    lieuarrivee String,
+    nombreplace Integer,
+    prixplace Double,
+    imageVehicule ImageBlob
+}
+
+entity Location {
+    lieu String
+    prix Double
+    description String
+    photoPieces ImageBlob
+}
+
+entity ObjetVolee {
+    type String,
+    marque String,
+    datevol LocalDate,
+    photoObjet ImageBlob,
+    numeroSerie String
+}
+
+
+relationship OneToMany {
+    User to ObjetVolee
+}
+
+relationship OneToMany {
+    User to Location
+}
+
+relationship OneToMany{
+    User to Trajet
+}
+
+paginate  Location, Trajet, ObjetVolee with pagination
+
+service * with serviceClass
+
+
